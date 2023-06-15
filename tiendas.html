@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas | ElecDom</title>
+    <link rel="stylesheet" href="css/tienda-style.css">
+    <link rel="stylesheet" href="css/tienda-grid.css">
+    <link rel="stylesheet" href="css/fuentes.css">
+    <link rel="stylesheet" href="css/colores.css">
+    <link rel="stylesheet" href="css/fuentes.scss">
+    <link rel="stylesheet" href="css/colores.scss">
+    <link rel="stylesheet" href="css/fuentes.css.map">
+    <link rel="stylesheet" href="css/colores.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="index.html" class="nav-enlace">
+                <img class="logo" src="fot/ElecDom.png" alt="">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-inicio">
+                    <a href="index.html">Inicio |</a>
+                </li>
+                <li class="nav-productos">
+                    <a href="productos.html">Productos |</a>
+                </li>
+                <li class="nav-tiendas">
+                    <a href="Tiendas.html">Tiendas |</a>
+                </li>
+                <li class="nav-contacto">
+                    <a href="contacto.html">Contactos</a>
+                </li>
+            </ul>
+
+            <div class="nav-btn">
+                <button onclick="location.href='compras.html'" class="carrito" type="button"></button>
+                <button  onclick="location.href='login.html'" class="log" type="button"></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="grid-contenedor">
+        <section class="grid-banner">
+            <section class="banner">
+                
+            </section>
+        </section>
+        <section class="grid-titulo">
+            <h1 class="titulo">NUESTRAS TIENDAS</h1>
+        </section>
+
+        <section class="grid-anidado">
+
+            <s id="p1"></s>
+            <s id="p2"></s>
+            <s id="p3"></s>
+
+            <section class="slider">
+                <section class="grid-producto">
+                    <img class="img-oferta" src="fot/elep2.jpg" alt="">
+                    <p class="parrafo-oferta"><h2 class="nombre-tienda">Calzada Independencia</h2> <p class="ubicacion"> <br> Estamos ubicados en la 17 calle de la zona 26
+                <br> Somos la tienda de productos electricos más grande de Guatemala </p></p>
+                    <button class="btn-informacion" type="button">Más información</button>
+                </section>
+                <section class="grid-producto">
+                    <img class="img-oferta" src="fot/elep1.jpeg" alt="">
+                    <p class="parrafo-oferta"><h2 class="nombre-tienda">Avenida Centroamérica</h2> <p class="ubicacion">
+                        <br> Te esperamos en: Avenida Centroamérica 5-25 Zona 4 <br> Todo lo que necesitas, al mejor precio! </p></p>
+                    <button class="btn-informacion" type="button">Más información</button>
+                </section>
+                <section class="grid-producto">
+                    <img class="img-oferta" src="fot/elep3.png" alt="">
+                    <p class="parrafo-oferta"><h2 class="nombre-tienda">Centro Comercial Akela</h2> <p class="ubicacion"> 
+                        <br> Nos encotraras en el Boulevard Los Próceres 20-45 Zona 13 <br> La mejor calidad y el mejor servicio!  </p></p>
+                    <button class="btn-informacion" type="button">Más información</button>
+                </section>
+            </section>
+
+            <section class="productoSiguiente">
+                <section>
+                    <a href="#p3"></a>
+                    <a href="#p2"></a>
+                </section>
+                <section>
+                    <a href="#p1"></a>
+                    <a href="#p3"></a>
+                </section>
+                <section>
+                    <a href="#p2"></a>
+                    <a href="#p1"></a>
+                </section>
+            </section>
+
+    </section>
+
+        <section class="mision-vision">
+        <section class="grid-tutorial1">
+            <span class="titulo-tutorial">
+                <h1 class="parrafo-tutorial">Misión</h1>
+                Nuestra misión es proveer a nuestros clientes los mejores productos y soluciones en 
+                materiales eléctricos, con altos estándares de calidad y servicio excepcional. 
+                Buscamos ser el proveedor de confianza que satisfaga las necesidades de nuestros clientes, 
+                brindando asesoramiento técnico especializado y contribuyendo al desarrollo de proyectos seguros, 
+                eficientes y sostenibles en el ámbito eléctrico.
+            </span>
+        </section>
+        <section class="grid-tutorial2">
+            <span class="titulo-tutorial">
+                <h1 class="parrafo-tutorial">Visión</h1>
+                Nuestra visión es ser líderes en el mercado de venta de materiales eléctricos, 
+                reconocidos por nuestra excelencia en calidad, innovación y servicio al cliente. 
+                Aspiramos a ser la primera opción para nuestros clientes al momento de adquirir 
+                productos y soluciones eléctricas, manteniendo una amplia gama de productos 
+                actualizados y ofreciendo precios competitivos. 
+            </span>
+        </section>
+    </section>
+
+        <section class="grid-footer">
+            ©ElecDom 2023 - Todos los derechos reservados
+        </section>
+    </main>
+
+</body>
+
+</html>

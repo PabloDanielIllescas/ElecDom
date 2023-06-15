@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras | ElecDom</title>
+    <link rel="stylesheet" href="css/contacto-estilo.css">
+    <link rel="stylesheet" href="css/compras.css">
+    <link rel="stylesheet" href="css/fuentes.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="contenedor-grid">
+    <header class="header">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="index.html" class="nav-enlace">
+                <img class="logo" src="fot/ElecDom.png" alt="">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-inicio">
+                    <a href="index.html">Inicio |</a>
+                </li>
+                <li class="nav-productos">
+                    <a href="productos.html">Productos |</a>
+                </li>
+                <li class="nav-tiendas">
+                    <a href="tiendas.html">Tiendas |</a>
+                </li>
+                <li class="nav-contacto">
+                    <a href="contacto.html">Contactos</a>
+                </li>
+            </ul>
+
+            <div class="nav-btn">
+                <button onclick="location.href='compras.html'" class="carrito" type="button"></button>
+                <button  onclick="location.href='login.html'" class="log" type="button"></button>
+            </div>
+        </nav>
+    </header>
+    <section class="contenedor-compra">
+        <section class="registro">
+            <h2 class="encabezado-compra">Registro</h2>
+            <section class="contenedor-radio">
+                <input type="radio" id="guardar-datos" name="registro">
+                <label for="guardar-datos" >Guardar mis datos</label><br>
+                <input type="radio" id="comprar-invitado" name="registro">
+                <label for="comprar-invitado">Comprar como invidato</label><br>
+                <input type="radio" id="tengo-cuenta" name="registro">
+                <label for="tengo-cuenta">Ya tengo cuenta</label>
+            </section>
+        </section>
+        <section class="envio">
+            <h2 class="encabezado-compra">Método de envío</h2>
+            <section class="contenedor-radio">
+                <input type="radio" id="cargo-expreso" name="envio">
+                <label for="cargo-expreso" >Cargo Expreso - Q35.00</label><br>
+                <input type="radio" id="recoger-bodega" name="envio">
+                <label for="recoger-bodega">Recoger en bodega - Q0.00</label><br>
+                <input type="radio" id="entrega-horas" name="envio">
+                <label for="entrega-horas">Entrega en 2 a 3 horas - Q30.00</label>
+            </section>
+        </section>
+        <section class="pago">
+            <h2 class="encabezado-compra">Método de pago</h2>
+            <section class="contenedor-radio">
+                <input type="radio" id="pago-entrega" name="pago">
+                <label for="pago-entrega" >Pago contraentrega</label><br>
+                <input type="radio" id="transferencia-deposito" name="pago">
+                <label for="transferencia-deposito">Transferencia o deposito bancario</label><br>
+                <input type="radio" id="tarjeta" name="pago">
+                <label for="tarjeta">Tarjeta de crédito o débito</label>
+            </section>
+        </section>
+        <section class="detalles">
+            <h2 class="encabezado-compra">Tus detalles</h2>
+            <form class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre"><br>
+                <label for="nombre">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ingrese teléfono"><br>
+                <label for="nombre">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese Email"><br>
+                <label for="nombre">Dirección:</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Ingrese Dirección"><br>
+
+                <label for="nombre">Departamento:</label>
+                <select name="" id="departamento">
+                    <option value="">Guatemala</option>
+                    <option value="">Izabal</option>
+                    <option value="">Sololá</option>
+                    <option value="">Zacapa</option>
+                </select><br>
+
+                <label for="nombre">Municipio:</label>
+                <select name="" id="municipio">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select><br>
+
+                <label for="nombre">NIT(Sin Guión)</label>
+                <input type="text" name="nit" id="nit" placeholder="Ingrese NIT">
+            </form>
+        </section>
+        <section class="productos">
+            <h2 class="encabezado-compra"></h2>
+                <button class="BTN">CONFIRMAR PEDIDO</button>
+        </section>
+    </section>
+    <footer class="footer">
+        ©ElecDom 2023 - Todos los derechos reservados
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var btn = document.querySelector('.BTN');
+    
+          btn.addEventListener('click', function() {
+            alert('El pedido ha sido enviado exitosamente.');
+          });
+        });
+      </script>
+</body>
+</html>
